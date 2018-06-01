@@ -8,4 +8,5 @@ router.get('/update/:id', customerController.edit);
 router.post('/update/:id', customerController.update);
 router.get('/delete/:id', customerController.delete);
 
+router.get('/ambiente/', customerController.listarAmb);
 module.exports = router;

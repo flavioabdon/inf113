@@ -1,5 +1,17 @@
 const controller = {};
 
+controller.listarAmb = (req, res) => {
+  req.getConnection((err, conn) => {
+    conn.query('SELECT * FROM  ambiente', (err, customers) => {
+     if (err) {
+      res.json(err);
+     }
+     res.render('ambientesView', {
+        data: customers
+     });
+    });
+  });
+};
 controller.list = (req, res) => {
   req.getConnection((err, conn) => {
     conn.query('SELECT * FROM customer', (err, customers) => {
