@@ -12,6 +12,42 @@ controller.listarAmb = (req, res) => {
     });
   });
 };
+controller.listarCon = (req, res) => {
+  req.getConnection((err, conn) => {
+    conn.query('SELECT * FROM  contrato', (err, customers) => {
+     if (err) {
+      res.json(err);
+     }
+     res.render('contratosView', {
+        data: customers
+     });
+    });
+  });
+};
+controller.listarPag = (req, res) => {
+  req.getConnection((err, conn) => {
+    conn.query('SELECT * FROM  pago', (err, customers) => {
+     if (err) {
+      res.json(err);
+     }
+     res.render('pagosView', {
+        data: customers
+     });
+    });
+  });
+};
+controller.listarInq = (req, res) => {
+  req.getConnection((err, conn) => {
+    conn.query('SELECT * FROM  inquilino', (err, customers) => {
+     if (err) {
+      res.json(err);
+     }
+     res.render('inquilinosView', {
+        data: customers
+     });
+    });
+  });
+};
 controller.list = (req, res) => {
   req.getConnection((err, conn) => {
     conn.query('SELECT * FROM customer', (err, customers) => {
