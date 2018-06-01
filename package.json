@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0"
+  },
   "author": "",
   "license": "ISC"
 }
