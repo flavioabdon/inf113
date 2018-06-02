@@ -38,20 +38,28 @@
       </table>
     </div>
   </div>
-    <div class="col-md-3">
+    <div class="col-md-12">
       <div class="card-body">
 
-        <form action="/add" method="POST">
+        <form action="/contrato/addCon" method="POST">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Name" class="form-control" autofocus>
+            <input type="text" name="id_inq" placeholder="Inquilino" class="form-control" autofocus>
           </div>
           <div class="form-group">
-            <input type="text" name="address" placeholder="Address" class="form-control">
+            <input type="text" name="id_amb" placeholder="Ambiente" class="form-control">
           </div>
           <div class="form-group">
-            <input type="text" name="phone" placeholder="Phone" class="form-control">
+            <input type="text" name="fecha_ini" placeholder="F. Inicio" class="form-control">
           </div>
-
+          <div class="form-group">
+            <input type="text" name="fecha_fin" placeholder="F. Conclusion" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="fecha_fima" placeholder="F. Firma" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="garantia" placeholder="Garantia" class="form-control">
+          </div>
           <button type="submit" class="btn btn-primary">
             save customer
           </button>

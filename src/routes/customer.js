@@ -18,10 +18,10 @@ router.get('/contrato/deleteCon/:id', customerController.deleteCon);
 router.get('/pago/deletePag/:id', customerController.deletePag);
 router.get('/inquilino/deleteInq/:id', customerController.deleteInq);
 
-//router.post('/ambiente/add', customerController.saveAmb);
-//router.post('/contrato/add', customerController.saveCon);
-//router.post('/pago/add', customerController.savePag);
-//router.post('/inquilino/add', customerController.saveInq);
+router.post('/ambiente/addAmb', customerController.saveAmb);
+router.post('/contrato/addCon', customerController.saveCon);
+router.post('/pago/addPag', customerController.savePag);
+router.post('/inquilino/addInq', customerController.saveInq);
 
 //router.get('/ambiente/update/:id', customerController.edit);
 //router.get('/contrato/update/:id', customerController.edit);

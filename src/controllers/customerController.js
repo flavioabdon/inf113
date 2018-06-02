@@ -1,5 +1,46 @@
 const controller = {};
 
+controller.saveAmb = (req, res) => {
+  const data = req.body;
+  console.log(req.body)
+  req.getConnection((err, connection) => {
+    const query = connection.query('INSERT INTO ambiente set ?', data, (err, customer) => {
+      console.log(customer)
+      res.redirect('/ambiente');
+    })
+  })
+};
+controller.saveCon = (req, res) => {
+  const data = req.body;
+  console.log(req.body)
+  req.getConnection((err, connection) => {
+    const query = connection.query('INSERT INTO contrato set ?', data, (err, customer) => {
+      console.log(customer)
+      res.redirect('/contrato');
+    })
+  })
+};
+controller.savePag = (req, res) => {
+  const data = req.body;
+  console.log(req.body)
+  req.getConnection((err, connection) => {
+    const query = connection.query('INSERT INTO pago set ?', data, (err, customer) => {
+      console.log(customer)
+      res.redirect('/pago');
+    })
+  })
+};
+controller.saveInq = (req, res) => {
+  const data = req.body;
+  console.log(req.body)
+  req.getConnection((err, connection) => {
+    const query = connection.query('INSERT INTO inquilino set ?', data, (err, customer) => {
+      console.log(customer)
+      res.redirect('/inquilino');
+    })
+  })
+};
+
 controller.deleteAmb = (req, res) => {
   const { id } = req.params;
   req.getConnection((err, connection) => {

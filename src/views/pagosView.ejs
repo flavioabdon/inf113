@@ -39,17 +39,25 @@
     <div class="col-md-12">
       <div class="card-body">
 
-        <form action="/add" method="POST">
+        <form action="/pago/addPag" method="POST">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Name" class="form-control" autofocus>
+            <input type="text" name="id_amb" placeholder="Ambiente" class="form-control" autofocus>
           </div>
           <div class="form-group">
-            <input type="text" name="address" placeholder="Address" class="form-control">
+            <input type="text" name="concepto" placeholder="Concepto" class="form-control">
           </div>
           <div class="form-group">
-            <input type="text" name="phone" placeholder="Phone" class="form-control">
+            <input type="text" name="montoACancelar" placeholder="Monto a cancelar" class="form-control">
           </div>
-
+          <div class="form-group">
+            <input type="text" name="montoCancelado" placeholder="Cancelado" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="observaciones" placeholder="Observaciones" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="fecha" placeholder="Vencimiento" class="form-control">
+          </div>
           <button type="submit" class="btn btn-primary">
             save customer
           </button>
