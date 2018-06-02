@@ -2,13 +2,17 @@
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-7">
+    <div class="col-md-12">
       <table class="table table-bordered table-hover">
         <thead>
           <tr>
-            <td>n°</td>
             <td>Nro</td>
-            <td>Planta</td>
+            <td>Ambiente</td>
+            <td>Concepto</td>
+            <td>A Cancelar</td>
+            <td>Cancelado</td>
+            <td>Observaciones</td>
+            <td>Fecha Vencimiento</td>
           </tr>
         </thead>
         <tbody>
@@ -16,11 +20,15 @@
             <% for(var i = 0; i < data.length; i++) { %>
               <tr>
                 <td><%= (i + 1) %></td>
+                <td><%= data[i].id_amb %></td>
+                <td><%= data[i].concepto %></td>
                 <td><%= data[i].montoACancelar %></td>
                 <td><%= data[i].montoCancelado %></td>
+                <td><%= data[i].observaciones %></td>
+                <td><%= data[i].fecha %></td>
                 <td>
                   <a href="/update/<%= data[i].id %>" class="btn btn-info">Edit</a>
-                  <a href="/delete/<%= data[i].id %>" class="btn btn-danger">Delete</a>
+                  <a href="/pago/deletePag/<%= data[i].id %>" class="btn btn-danger">Delete</a>
                 </td>
               </tr>
             <% } %>
@@ -28,7 +36,7 @@
         </tbody>
       </table>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-12">
       <div class="card-body">
 
         <form action="/add" method="POST">

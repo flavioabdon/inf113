@@ -6,9 +6,12 @@
       <table class="table table-bordered table-hover">
         <thead>
           <tr>
-            <td>c1</td>
-            <td>c2</td>
-            <td>c3</td>
+            <td>Nro</td>
+            <td>Ci</td>
+            <td>Nombre</td>
+            <td>Celular</td>
+            <td>Genero</td>
+            <td>Acciones</td>
           </tr>
         </thead>
         <tbody>
@@ -16,11 +19,13 @@
             <% for(var i = 0; i < data.length; i++) { %>
               <tr>
                 <td><%= (i + 1) %></td>
-                <td><%= data[i].ci %></td>
+                <td><%= data[i].ci + '.' + data[i].extencion +'.'%></td>
                 <td><%= data[i].nombre %></td>
+                <td><%= data[i].cel %></td>
+                <td><%= data[i].genero %></td>
                 <td>
                   <a href="/update/<%= data[i].id %>" class="btn btn-info">Edit</a>
-                  <a href="/delete/<%= data[i].id %>" class="btn btn-danger">Delete</a>
+                  <a href="/inquilino/deleteInq/<%= data[i].id %>" class="btn btn-danger">Delete</a>
                 </td>
               </tr>
             <% } %>

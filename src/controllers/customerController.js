@@ -1,5 +1,38 @@
 const controller = {};
 
+controller.deleteAmb = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, connection) => {
+    connection.query('DELETE FROM ambiente WHERE id = ?', [id], (err, rows) => {
+      res.redirect('/ambiente/');
+    });
+  });
+}
+controller.deleteCon = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, connection) => {
+    connection.query('DELETE FROM contrato WHERE id = ?', [id], (err, rows) => {
+      res.redirect('/contrato/');
+    });
+  });
+}
+controller.deletePag = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, connection) => {
+    connection.query('DELETE FROM pago WHERE id = ?', [id], (err, rows) => {
+      res.redirect('/pago/');
+    });
+  });
+}
+controller.deleteInq = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, connection) => {
+    connection.query('DELETE FROM inquilino WHERE id = ?', [id], (err, rows) => {
+      res.redirect('/inquilino/');
+    });
+  });
+}
+
 controller.listarAmb = (req, res) => {
   req.getConnection((err, conn) => {
     conn.query('SELECT * FROM  ambiente', (err, customers) => {

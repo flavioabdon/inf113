@@ -2,13 +2,18 @@
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-7">
+    <div class="col-md-12">
       <table class="table table-bordered table-hover">
         <thead>
           <tr>
-            <td>c1</td>
-            <td>c2</td>
-            <td>c3</td>
+            <td>Nro</td>
+            <td>Inquilino</td>
+            <td>Ambiente</td>
+            <td>F. Inicial</td>
+            <td>F Conclusion</td>
+            <td>F. Firma</td>
+            <td>Garantia</td>
+            <td>Acciones</td>
           </tr>
         </thead>
         <tbody>
@@ -17,10 +22,14 @@
               <tr>
                 <td><%= (i + 1) %></td>
                 <td><%= data[i].id_inq %></td>
+                <td><%= data[i].id_amb %></td>
+                <td><%= data[i].fecha_ini %></td>
+                <td><%= data[i].fecha_fin %></td>
+                <td><%= data[i].fecha_fima %></td>
                 <td><%= data[i].garantia %></td>
                 <td>
                   <a href="/update/<%= data[i].id %>" class="btn btn-info">Edit</a>
-                  <a href="/delete/<%= data[i].id %>" class="btn btn-danger">Delete</a>
+                  <a href="/contrato/deleteCon/<%= data[i].id %>" class="btn btn-danger">Delete</a>
                 </td>
               </tr>
             <% } %>
@@ -28,7 +37,8 @@
         </tbody>
       </table>
     </div>
-    <div class="col-md-5">
+  </div>
+    <div class="col-md-3">
       <div class="card-body">
 
         <form action="/add" method="POST">
@@ -49,6 +59,7 @@
       </div>
     </div>
   </div>
+ </div>
 </div>
 
 <% include partials/_footer %>

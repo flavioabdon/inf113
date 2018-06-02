@@ -12,4 +12,20 @@ router.get('/ambiente/', customerController.listarAmb);
 router.get('/contrato/', customerController.listarCon);
 router.get('/pago/', customerController.listarPag);
 router.get('/inquilino/', customerController.listarInq);
+
+router.get('/ambiente/deleteAmb/:id', customerController.deleteAmb);
+router.get('/contrato/deleteCon/:id', customerController.deleteCon);
+router.get('/pago/deletePag/:id', customerController.deletePag);
+router.get('/inquilino/deleteInq/:id', customerController.deleteInq);
+
+//router.post('/ambiente/add', customerController.saveAmb);
+//router.post('/contrato/add', customerController.saveCon);
+//router.post('/pago/add', customerController.savePag);
+//router.post('/inquilino/add', customerController.saveInq);
+
+//router.get('/ambiente/update/:id', customerController.edit);
+//router.get('/contrato/update/:id', customerController.edit);
+//router.get('/pago/update/:id', customerController.edit);
+//router.get('/inquilino/update/:id', customerController.edit);
+
 module.exports = router;
