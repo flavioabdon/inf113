@@ -1,12 +1,12 @@
-# H1 Registro de Alquileres
-## H2 1 Requisitos.
+# Registro de Alquileres
+## 1 Requisitos.
 ⋅⋅* Nodejs >= 8.9.4
 ⋅⋅* MySql ó MariaDB
 
-## H2 2 Base de Datos.
+## 2 Base de Datos.
 ⋅⋅* Ejecutar el script.sql, /database/script.sql
 
-## H2 3 Ejecutar proyetco
+## 3 Ejecutar proyetco
 Ir al directorio del proyecto
 ```console
 usuario@host:~$ cd ruta/carpetaProyeto
