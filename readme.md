@@ -1,10 +1,10 @@
 # Registro de Alquileres
 ## 1 Requisitos.
-⋅⋅* Nodejs >= 8.9.4
-⋅⋅* MySql ó MariaDB
+Nodejs >= 8.9.4
+MySql ó MariaDB
 
 ## 2 Base de Datos.
-⋅⋅* Ejecutar el script.sql, /database/script.sql
+Ejecutar el script.sql, /database/script.sql
 
 ## 3 Ejecutar proyetco
 Ir al directorio del proyecto
