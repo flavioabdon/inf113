@@ -1,5 +1,83 @@
 const controller = {};
 
+controller.updateAmb = (req, res) => {
+  const { id } = req.params;
+  const newCustomer = req.body;
+  req.getConnection((err, conn) => {
+  conn.query('UPDATE ambiente set ? where id = ?', [newCustomer, id], (err, rows) => {
+    res.redirect('/ambiente');
+  });
+  });
+};
+controller.updateCon = (req, res) => {
+  const { id } = req.params;
+  const newCustomer = req.body;
+  req.getConnection((err, conn) => {
+  conn.query('UPDATE contrato set ? where id = ?', [newCustomer, id], (err, rows) => {
+    res.redirect('/contrato');
+  });
+  });
+};
+controller.updatePag = (req, res) => {
+  const { id } = req.params;
+  const newCustomer = req.body;
+  req.getConnection((err, conn) => {
+  conn.query('UPDATE pagina set ? where id = ?', [newCustomer, id], (err, rows) => {
+    res.redirect('/pago');
+  });
+  });
+};
+controller.updateInq = (req, res) => {
+  const { id } = req.params;
+  const newCustomer = req.body;
+  req.getConnection((err, conn) => {
+  conn.query('UPDATE inquilino set ? where id = ?', [newCustomer, id], (err, rows) => {
+    res.redirect('/inquilino');
+  });
+  });
+};
+
+controller.editAmb = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query("SELECT * FROM ambiente WHERE id = ?", [id], (err, rows) => {
+      res.render('ambientes_edit', {
+        data: rows[0]
+      })
+    });
+  });
+};
+controller.editCon = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query("SELECT * FROM contrato WHERE id = ?", [id], (err, rows) => {
+      res.render('contratos_edit', {
+        data: rows[0]
+      })
+    });
+  });
+};
+controller.editPag = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query("SELECT * FROM pago WHERE id = ?", [id], (err, rows) => {
+      res.render('pagos_edit', {
+        data: rows[0]
+      })
+    });
+  });
+};
+controller.editInq = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query("SELECT * FROM inquilino WHERE id = ?", [id], (err, rows) => {
+      res.render('inquilinos_edit', {
+        data: rows[0]
+      })
+    });
+  });
+};
+
 controller.saveAmb = (req, res) => {
   const data = req.body;
   console.log(req.body)

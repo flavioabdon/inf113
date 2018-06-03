@@ -23,7 +23,7 @@ router.post('/contrato/addCon', customerController.saveCon);
 router.post('/pago/addPag', customerController.savePag);
 router.post('/inquilino/addInq', customerController.saveInq);
 
-//router.get('/ambiente/update/:id', customerController.edit);
+router.get('/ambiente/updateAmb/:id', customerController.editAmb);
 //router.get('/contrato/update/:id', customerController.edit);
 //router.get('/pago/update/:id', customerController.edit);
 //router.get('/inquilino/update/:id', customerController.edit);
