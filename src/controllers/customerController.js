@@ -22,7 +22,7 @@ controller.updatePag = (req, res) => {
   const { id } = req.params;
   const newCustomer = req.body;
   req.getConnection((err, conn) => {
-  conn.query('UPDATE pagina set ? where id = ?', [newCustomer, id], (err, rows) => {
+  conn.query('UPDATE pago set ? where id = ?', [newCustomer, id], (err, rows) => {
     res.redirect('/pago');
   });
   });

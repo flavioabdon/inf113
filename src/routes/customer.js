@@ -24,8 +24,13 @@ router.post('/pago/addPag', customerController.savePag);
 router.post('/inquilino/addInq', customerController.saveInq);
 
 router.get('/ambiente/updateAmb/:id', customerController.editAmb);
-//router.get('/contrato/update/:id', customerController.edit);
-//router.get('/pago/update/:id', customerController.edit);
-//router.get('/inquilino/update/:id', customerController.edit);
+router.get('/contrato/updateCon/:id', customerController.editCon);
+router.get('/pago/updatePag/:id', customerController.editPag);
+router.get('/inquilino/updateInq/:id', customerController.editInq)
+
+router.post('/ambiente/updateAmb/:id', customerController.updateAmb);
+router.post('/contrato/updateCon/:id', customerController.updateCon);
+router.post('/Pago/updatePag/:id', customerController.updatePag);
+router.post('/inquilino/updateInq/:id', customerController.updateInq);
 
 module.exports = router;
