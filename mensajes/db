@@ -1,0 +1,17 @@
+
+CREATE TABLE message (
+	id INT(6) PRIMARY_KEY AUTO_INCREMENT,
+	contac VARCHAR(50) NOT NULL,
+	msg VARCHAR(300) NOT NULL,
+	status	INT(6) NOT NULL DEFAULT 0
+);
+
+
+
+con este si funciono 
+
+CREATE TABLE messages ( contac VARCHAR(50), msg VARCHAR(300), status CHAR(1) );
+
+
+Asi es como se van creando registros de para la nueva base de datos
+INSERT INTO messages VALUES ('Block de notas','17 horas, 21 minutos...... np hay cuerpos','0');
