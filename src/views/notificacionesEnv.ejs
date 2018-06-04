@@ -1,0 +1,47 @@
+<% include partials/_header %>
+
+  <div class="container">
+
+    <div>
+      <h1> notificaciones</h1>
+      <div>
+        <h3>Enviar mensaje a todos los contactos</h3>
+        <div class="form-group row">
+          <div class="col-xl-9">
+            <input type="text" class="form-control" id="mensaje"></input>
+            <label for="mensaje"> Introduzca su mensaje </label>
+          </div>
+          <div class="col-xl-3">
+              <button type="button" class="btn btn-default">Enviar</button>
+            </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Enviar mensaje a un contacto en particular</h3>
+        <div class="form-group row">
+          <div>
+          <select class="form-control" style="font-size: 8pt">
+              <% if (data) { %>
+                <% for(var i = 0; i < data.length; i++) { %>
+                  <option>
+                      <%= data[i].nombre %>
+                    </option>
+                  <% } %>
+                    <% } %>
+          </select>
+        </div>
+          <div class="col-xl-9">
+            <input type="text" class="form-control" id="mensaje"></input>
+            <label for="mensaje"> Introduzca su mensaje </label>
+          </div>
+          <div class="col-xl-3">
+            <button type="button" class="btn btn-default">Enviar</button>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+      <% include partials/_footer %>
