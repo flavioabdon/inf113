@@ -2,6 +2,8 @@ const router = require('express').Router();
 
 const customerController = require('../controllers/customerController');
 
+router.get('/', customerController.inicio);
+
 router.get('/ambiente/', customerController.listarAmb);
 router.get('/contrato/', customerController.listarCon);
 router.get('/pago/', customerController.listarPag);

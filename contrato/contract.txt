@@ -1,0 +1,74 @@
+\documentclass[letter,12pt]{article} 
+\usepackage[spanish]{babel}
+\usepackage{booktabs}
+%\usepackage{textcomp}
+
+\input{structure.tex} % importando las configuraciones desde otro archivo
+
+%----------------------------------------------------------------------------------------
+%	variables dinámicas para llenar el contrato
+%----------------------------------------------------------------------------------------
+
+\newcommand{\piso}{primera planta } % primera planta o planta baja 
+\newcommand{\numambiente}{15 }
+\newcommand{\hommuj}{INQUILINA} %inquilino/inquilina
+\newcommand{\srsra}{a la Sra. } % al señor o a la señora 
+\newcommand{\nombreinquilino}{María Sonia Paredes Chávez } %nombre completo 
+\newcommand{\ci}{9111299 L.P. } % # de carnet mas extencion 
+\newcommand{\alquiler}{600 (Seiscientos 00/100 } % monto espacio(literal 
+\newcommand{\tiempo}{6 meses calendario } %tiempo de duracion del contrato
+\newcommand{\fechaini}{01 de junio de 2018 } % a partir del ...... 
+\newcommand{\fechafin}{31 de diciembre de 2018 } % hasta ....
+\newcommand{\usosambiente}{almacén de juguetes}
+\newcommand{\luz}{20 (veinte 00/100 }
+\newcommand{\garantia}{8000 (ocho mil 00/100 }
+\newcommand{\fechalit}{cuatro días del mes de febrero de los dos mil dieciocho años}
+\newcommand{\fechafir}{4 de febrero de 2018}
+\newcommand{\blankspace}{}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+\begin{center}
+
+{\LARGE \textbf{CONTRATO PRIVADO DE ALQUILER}}\\
+
+\end{center}
+
+
+Conste por el presente contrato privado de alquiler, que suscribimos entre, partes que con el sólo reconocimiento de firmas y rubricas, se lo tendrá de instrumento público, al tenor de las siguientes cláusulas:
+
+\section*{PRIMERA.-}
+
+Yo Martha Chipana de Vino, con C.I. 3364282 L.P., mayor de edad y hábil por derecho, casada declaro expresamente ser dueña y legitima propietaria del inmueble ubicado en la calle 15 de agosto \# 924 de la zona de Callampaya de esta ciudad.  
+
+\section*{SEGUNDA.-}
+Al presente, de mi propia decisión y por convenir a mis intereses doy en calidad de alquiler el ambiente \# \numambiente  en la \piso ubicado en la misma dirección, \srsra   \nombreinquilino con C.I. \ci en la suma libremente acordada de Bs \alquiler bolivianos) y por el tiempo \tiempo  a partir del \fechaini al \fechafin. El ambiente será utilizado para \usosambiente .
+
+\section*{TERCERA.-}
+Yo, \nombreinquilino con C.I. \ci doy en calidad de garantía la suma Bs \garantia bolivianos).  
+
+\section*{CUARTA.-}
+El servicio de energía eléctrica es compartido y la cancelación será de acuerdo a la prorrata, la suma de Bs. \luz bolivianos).
+
+\subsection*{QUINTA.-}
+Yo Martha Chipana de Vino, declaro haber recibido el monto de Bs \garantia  bolivianos) por el concepto de garantía, y me comprometo a devolver en la misma moneda, cuando se cumpla el periodo de alquiler.  
+
+\section*{SEXTA.-}
+Estando de acuerdo ambas partes firmamos al pie a los \fechalit . \\
+\vspace{0.03cm}\\
+La Paz, \fechafir . \\
+\vspace{1cm}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c}
+& \hspace{3cm}  & \\ \cmidrule{1-1} \cmidrule{3-3} 
+ Martha Chipana de Vino &        & \nombreinquilino \\
+ C.I. 3364282 L.P. &     &C.I. \ci \\ 
+ PROPIETARIA &         &\hommuj
+\end{tabular}
+\end{table}
+
+\end{document}

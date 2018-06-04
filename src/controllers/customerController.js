@@ -201,4 +201,10 @@ controller.listarInq = (req, res) => {
   });
 };
 
+controller.inicio = (req, res) => {
+  req.getConnection((err, conn) => {
+     res.render('customers');
+  });
+};
+
 module.exports = controller;
