@@ -1,8 +1,11 @@
 const router = require('express').Router();
 
 const customerController = require('../controllers/customerController');
+const notificacionesController = require('../controllers/notificacionesController')
 
 router.get('/', customerController.inicio);
+router.get('/notificaciones', notificacionesController.list);
+router.get('/notificacionesEnv', notificacionesController.env);
 
 router.get('/ambiente/', customerController.listarAmb);
 router.get('/contrato/', customerController.listarCon);

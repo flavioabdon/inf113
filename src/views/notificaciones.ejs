@@ -1,0 +1,33 @@
+<% include partials/_header %>
+
+  <div class="container">
+      <div class="container mt-12">
+        <h1>Mensajes enviados </h1>
+        <div class="row">
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <td>Contacto</td>
+                <td>Mensaje</td>
+              </tr>
+            </thead>
+            <tbody>
+              <% if (data) { %>
+                <% for(var i = 0; i < data.length; i++) { %>
+                  <tr>
+                    <td>
+                      <%= data[i].contac %>
+                    </td>
+                    <td>
+                      <%= data[i].msg %>
+                    </td>
+                  </tr>
+                  <% } %>
+                    <% } %>
+            </tbody>
+          </table>
+        </div>
+        <a href="/notificacionesEnv %>" class="btn btn-info">Enviar nuevo mensaje</a>
+      </div>
+
+      <% include partials/_footer %>
