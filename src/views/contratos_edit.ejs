@@ -6,20 +6,20 @@
       <div class="card-body">
         <form action="/contrato/updateCon/<%= data.id %>" method="POST">
           <div class="form-group">
-            <input type="text" name="id_inq" value="<%= data.id_inq%>" placeholder="Name" class="form-control" autofocus>
+            <input type="number" name="id_inq" value="<%= data.id_inq%>" placeholder="Inquilino" class="form-control" autofocus required>
           </div>
           <div class="form-group">
-            <input type="text" name="id_amb" value="<%= data.id_amb%>" placeholder="Address" class="form-control">
+            <input type="number" name="id_amb" value="<%= data.id_amb%>" placeholder="Ambiente" class="form-control" required>
           </div>
           <div class="form-group">
-            <input type="text" name="fecha_ini" value="<%= data.fecha_ini%>" placeholder="Phone" class="form-control">
+            <input type="date" name="fecha_ini" value="<%= data.fecha_ini%>" placeholder="Fecha Inicial" class="form-control" required>
           </div>
           <div class="form-group">
-            <input type="text" name="fecha_fima" value="<%= data.fecha_fima%>" placeholder="Phone" class="form-control">
+            <input type="date" name="fecha_fima" value="<%= data.fecha_fima%>" placeholder="Fecha Final" class="form-control"required>
           </div>
 
           <div class="form-group">
-            <input type="text" name="data.garantia" value="<%= data.garantia%>" placeholder="Phone" class="form-control">
+            <input type="number" name="data.garantia" value="<%= data.garantia%>" placeholder="Garantia" class="form-control" required>
           </div>
 
           <button type="submit" class="btn btn-primary">

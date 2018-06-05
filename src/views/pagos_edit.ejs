@@ -6,16 +6,16 @@
       <div class="card-body">
         <form action="/pago/updatePag/<%= data.id %>" method="POST">
           <div class="form-group">
-            <input type="text" name="id_amb" value="<%= data.id_amb%>" placeholder="Name" class="form-control" autofocus>
+            <input type="number" name="id_amb" value="<%= data.id_amb%>" placeholder="Name" class="form-control" autofocus required>
           </div>
           <div class="form-group">
-            <input type="text" name="concepto" value="<%= data.concepto%>" placeholder="Address" class="form-control">
+            <input type="text" name="concepto" value="<%= data.concepto%>" placeholder="Address" class="form-control" required>
           </div>
           <div class="form-group">
-            <input type="text" name="montoACancelar" value="<%= data.montoACancelar%>" placeholder="Phone" class="form-control">
+            <input type="number" name="montoACancelar" value="<%= data.montoACancelar%>" placeholder="Phone" class="form-control" required>
           </div>
           <div class="form-group">
-            <input type="text" name="montoCancelado" value="<%= data.montoCancelado%>" placeholder="Phone" class="form-control">
+            <input type="number" name="montoCancelado" value="<%= data.montoCancelado%>" placeholder="Phone" class="form-control" required>
           </div>
           <div class="form-group">
             <input type="text" name="observaciones" value="<%= data.observaciones%>" placeholder="Phone" class="form-control">

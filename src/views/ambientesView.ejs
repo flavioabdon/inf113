@@ -67,9 +67,9 @@
       </div>
       <div class="modal-body">
         <div class="card-body">
-          <form id="formularioSaveAmb" action="/ambiente/addAmb" method="POST">
+          <form name="formularioSaveAmb" id="formularioSaveAmb" action="/ambiente/addAmb" method="POST">
             <div class="form-group">
-              <input type="text" name="nro" placeholder="Número de Habitación" class="form-control" autofocus>
+              <input type="number" name="nro" placeholder="Número de Habitación" class="form-control" autofocus onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
             </div>
           <!--  <div class="form-group">
               <input type="text" name="planta" placeholder="Planta" class="form-control">
