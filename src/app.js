@@ -33,5 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // starting the server
 app.listen(app.get('port'), () => {
+  console.log(`Error puerto`);
   console.log(`server on port ${app.get('port')}`);
+  console.log(`Fin log.`);
 });

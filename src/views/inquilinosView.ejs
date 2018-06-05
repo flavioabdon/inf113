@@ -52,7 +52,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Agregar Ambiente</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Inquilino</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -73,20 +73,17 @@
               <input type="text" name="cel" placeholder="Celular" class="form-control">
             </div>
             <div class="form-group">
-              <input type="text" name="genero" placeholder="Genero" class="form-control">
+              <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha" placeholder="fecha" class="form-control" >
             </div>
             <div class="form-group">
-            <!--  <input type="text" name="fecha" placeholder="F. Nacimiento" class="form-control"> -->
-            <input id="datepicker" name="fecha" width="276" />
-            <script>
-              $('#datepicker').datepicker({
-                  uiLibrary: 'bootstrap4'
-              });
-          </script>
+              <label for="genero">Genero</label>
+              <select name="genero" class="custom-select">
+                  <option selected> </option>
+                   <option>M</option>
+                   <option>F</option>
+               </select>
             </div>
-
-
-
             <button type="submit" class="btn btn-primary">
                 <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5IDQ5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OSA0OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0zOS45MTQsMEgzNy41aC0yOGgtOXY0OWg3aDMzaDhWOC41ODZMMzkuOTE0LDB6IE0zNS41LDJ2MTRoLTI0VjJIMzUuNXogTTkuNSw0N1YyOGgyOXYxOUg5LjV6IE00Ni41LDQ3aC02VjI2aC0zM3YyMWgtNSAgIFYyaDd2MTZoMjhWMmgxLjU4Nkw0Ni41LDkuNDE0VjQ3eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBhdGggZD0iTTEzLjUsMzNoN2MwLjU1MywwLDEtMC40NDcsMS0xcy0wLjQ0Ny0xLTEtMWgtN2MtMC41NTMsMC0xLDAuNDQ3LTEsMVMxMi45NDcsMzMsMTMuNSwzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTxwYXRoIGQ9Ik0yMy41LDM1aC0xMGMtMC41NTMsMC0xLDAuNDQ3LTEsMXMwLjQ0NywxLDEsMWgxMGMwLjU1MywwLDEtMC40NDcsMS0xUzI0LjA1MywzNSwyMy41LDM1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBhdGggZD0iTTI1Ljc5LDM1LjI5Yy0wLjE4MSwwLjE4OS0wLjI5LDAuNDUtMC4yOSwwLjcxczAuMTA5LDAuNTIsMC4yOSwwLjcxQzI1Ljk3OSwzNi44OSwyNi4yMjksMzcsMjYuNSwzNyAgIGMwLjI2LDAsMC41Mi0wLjExLDAuNzEtMC4yOWMwLjE4LTAuMTksMC4yOS0wLjQ1LDAuMjktMC43MXMtMC4xMS0wLjUyMS0wLjI5LTAuNzFDMjYuODQsMzQuOTIsMjYuMTYsMzQuOTIsMjUuNzksMzUuMjl6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNMzMuNSw0aC02djEwaDZWNHogTTMxLjUsMTJoLTJWNmgyVjEyeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
                 Guardar nuevo inquilino
